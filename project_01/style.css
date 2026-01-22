@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color: rgb(5, 2, 61);
+}
+
+.container{
+    background-color: rgb(118, 84, 211);
+    height: 300px;
+    width:500px;
+    margin-left:30%;
+    margin-top:15%;
+    border-radius: 5%;
+    border-color:white;
+    padding:20px; 
+    flex-direction: column;
+    box-shadow:0 0 15px rgb(118,84,211);
+    
+}
+.button{
+    width:300px;
+    height:25px;
+    background-color: aquamarine;
+}
+.input{
+    height:20px;
+    width:300px;
+}
