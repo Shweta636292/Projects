@@ -1,0 +1,101 @@
+/* Navbar layout */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+/* Menu in single line */
+.links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  display: inline-block;
+}
+
+.links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.links a:hover {
+  color: orange;
+}
+
+/* Logo with rings */
+.logo-container {
+  position: relative;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.logo-text {
+  position: relative;
+  z-index: 2;
+}
+
+.ring {
+  position: absolute;
+  border: 3px solid #f4b400;
+  border-radius: 50%;
+  width: 90px;
+  height: 55px;
+  top: -10px;
+  left: -10px;
+}
+
+.ring1 {
+  transform: rotate(-10deg);
+}
+
+.ring2 {
+  top: -5px;
+  left: 5px;
+  transform: rotate(10deg);
+}
+.name{
+  margin-left: 8%;
+  margin-top: 15%;
+}
+div span{
+  color: rgb(114, 70, 128);
+}
+button{
+  background-color: #000;
+  color: white;
+}
+.purple-shape{
+    position: absolute;
+    width: 520px;
+    height: 500px;
+    background: rgb(89, 2, 160);
+    border-radius: 60% 24% 30% 70% / 60% 30% 70% 40%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.girl{
+    position: absolute;
+    width: 250px;
+    top: 45%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: left 0.5s ease;
+    background: transparent; /* smooth */
+}
+
+
+.purple-shape:hover .girl{
+    left: 45%;
+}
