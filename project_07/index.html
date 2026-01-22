@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Digital Card</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(120deg,#dfe9f3,#ffffff);
+}
+
+/* PHONE */
+.phone{
+    width:360px;
+    height:740px;
+    background:#000;
+    border-radius:45px;
+    padding:14px;
+    animation: float 4s ease-in-out infinite;
+    box-shadow:0 25px 60px rgba(0,0,0,0.35);
+}
+
+/* FLOAT EFFECT */
+@keyframes float{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-12px); }
+}
+
+/* SCREEN */
+.screen{
+    width:100%;
+    height:100%;
+    background:#fff;
+    border-radius:35px;
+    overflow:hidden;
+    text-align:center;
+    font-family:'Playfair Display', serif;
+}
+
+/* TOP */
+.top{
+    height:260px;
+    background:linear-gradient(135deg,#fde9e9,#f8dcdc);
+    position:relative;
+}
+
+/* PROFILE IMAGE */
+.profile{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:8px solid #fff;
+    object-fit:cover;
+    position:absolute;
+    bottom:-75px;
+    left:50%;
+    transform:translateX(-50%);
+    transition:0.4s;
+}
+
+.profile:hover{
+    transform:translateX(-50%) scale(1.06);
+}
+
+/* CONTENT */
+.content{
+    padding-top:90px;
+}
+
+.name{
+    font-family:'Pacifico', cursive;
+    font-size:38px;
+    margin:10px 0 5px;
+}
+
+.role{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.info{
+    font-size:16px;
+    line-height:1.7;
+}
+
+.website{
+    font-weight:700;
+    margin-top:10px;
+}
+
+/* CONNECT */
+.connect{
+    font-family:'Pacifico', cursive;
+    font-size:26px;
+    margin:28px 0 14px;
+}
+
+/* ICONS */
+.icons{
+    display:flex;
+    justify-content:center;
+    gap:22px;
+}
+
+.icons a{
+    width:50px;
+    height:50px;
+    background:#000;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.icons a:hover{
+    background:#444;
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
+</style>
+</head>
+
+<body>
+
+<div class="phone">
+    <div class="screen">
+
+        <div class="top">
+            <img src="s.jpeg" class="profile">
+        </div>
+
+        <div class="content">
+            <div class="name">Shweta p gejjihalli</div>
+            <div class="role">Full stack developer</div>
+
+            <div class="info">
+                M: 123-456-7890<br>
+                Shwetagejjihalli@email.com<br>
+                A: Mangalore City, India
+            </div>
+
+            <div class="connect">Let’s connect</div>
+
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/shweta-p-g-4ab525392"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Shweta636292"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
