@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+
+}
+.wrapper{
+    width: 400%;
+    height: 1000px;
+    background-color:#000;
+    position:relative;
+    padding:40px;
+    box-shadow: 0 0 50px lightpink;
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+
+}
+.wrapper:hover{
+    animation: animate 1s linear infinite;
+}
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
+}
+.form-wrapper{
+    margin-left: 400px;
+    width: 300px;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border-radius: 50px;
+    box-shadow:0 0 50px #0ef;
+    overflow: hidden;
+    padding: 25px;
+
+}
+.wrapper.active .form-wrapper.sign-up{
+    transform: translateY(-450px);
+}
+.wrapper.form-wrapper.sign-up{
+    position: absolute;
+    top: 450px;
+    left:0;
+
+}
+.wrapper.active .form-wrapper.sign-up{
+    transform: translateY(-450px);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; 
+}
+.input-group{
+    position: relative;
+    margin-bottom: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+.input-group input{
+    width: 320%;
+    padding: 0 5px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+.input-group label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition:-5s;
+}
+.remember-me{
+    margin:-5px 0 15px 5px;
+}
+.remember-me input{
+    margin-right: 5px;
+    accent-color: #0ef;
+}
+.remember-me label{
+    color:#fff;
+    font-size: 14px;
+}
+button{
+    width: 90%;
+    height: 30px;
+    font-weight: bold;
+    background-color: #0ef;
+    box-shadow: 0 0 10px rgb(85, 244, 255);
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.signUp-link{
+    text-align: center;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 14px;
+}
+.signUp-link a{
+    color:#fff;
+    text-decoration: none;
+}
+.signUp-link a:hover{
+    text-decoration: underline;
+    color: #0ef;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label{
+    top: -5px;
+
+}
